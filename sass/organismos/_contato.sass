@@ -1,0 +1,43 @@
+section.contato
+	padding-top: 40px
+	form
+		
+		+clearfix
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+		.colunarow
+			+make-row
+
+		.coluna
+			+make-sm-column(6)
+
+		input,
+		select,
+		textarea
+			width: 100%
+			border-bottom: 1px solid $lilas
+			border-top: none
+			border-left: none
+			text-transform: uppercase
+			padding: 8px
+
+			&:hover
+				+transition(.3s)
+				border-bottom: 2px solid $azul
+
+
+			&:focus
+				border-bottom: 2px solid $amarelo
+
+
+	.botao
+		display: table
+		margin: 0 auto
+		+transition(0.3s)
+	.bg-success,
+	.bg-danger
+		+border-radius(90px)
+		padding: 7px
+		font-size: 12pt
+		text-align: center
+
